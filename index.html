@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Front-end Mentor</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <div class="conteiner">
+        <header>
+
+            <nav>
+                <div class="logoMenu">
+                    <div id="menu_icon" class="menu_icon">
+                        <img src="./images/icon-menu.svg">
+                    </div>
+    
+                    <div class="logo">
+                        <img src="./images/logo.svg"/>
+                    </div>
+                </div>
+
+                <ul id="menu">
+                    <img id="fecharmenu"  class="fecharmenu" src="./images/icon-close.svg"/>
+                    <li><a href="#" >Collections</a></li>
+                    <li><a href="#" >Men</a></li>
+                    <li><a href="#" >Woman</a></li>
+                    <li><a href="#" >About</a></li>
+                    <li><a href="#" >Contact</a></li>
+                </ul>
+
+                <div class="icones">
+                    <div id="carrinho" class="icon1">
+                        <img src="./images/icon-cart.svg">
+                        <div id="valorcar" class="valorcar">0</div>
+                    </div>
+                    <div class="icon2"><img src="./images/image-avatar.png"></div>
+                    <div id="caixatexto" class="caixatexto">
+                        <p class="titulocaixa">Cart</p>
+                        <div id="caixacompra" class="caixacompra">
+                            <img class="imgproduto" src="./images/image-product-1-thumbnail.jpg"/>
+                            <p id="frasecompra"></p>
+                            <img id="imgdeleta" class="imgdeleta" src="./images/icon-delete.svg"/>
+                        </div>
+                        <button id="btn_checkout">Checkout</button>
+                        <p id="frasecarrinho" class="frasecarrinho">Your cart is empty.</p>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+        
+        <main>
+          <div class="flex">
+                <div class="imagem">
+                    <img id="img_principal" src="./images/image-product-1.jpg"/>
+                </div>
+
+                <div class="info">
+
+                   <p class="p1">SNEAKER COMPANY</p>
+                   <h2>Fall Limite Edition<br> Sneakers </h2>
+                   <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Rerum dolorem adipisci exercitationem, alias neque facilis voluptate magnam dicta itaque ipsum ex accusamus. <br>Eos excepturi soluta asperiores enim alias laudantium magni.</p>
+                   
+                   <div class="valores">
+                     <p class="preco">$125.00</p>
+                     <p class="promo">50%</p>
+                   </div>
+                   
+                   <div class="btns"> 
+                        <div class="qntd">
+                          <img id="diminuir" src="./images/icon-minus.svg" class="menos"/>
+                          <p id="txt_qnt">1</p>
+                          <img id="somar" src="./images/icon-plus.svg"  class="mais"/>
+                        </div>
+                        
+                        <button id="btn_add"><img src="./images/icon-cart.svg">Add to cart</button>
+                    </div>
+                  
+                </div>
+
+                <div class="cards">
+                    <div class="card"><img src="./images/image-product-1-thumbnail.jpg"/></div>
+                    <div class="card"><img src="./images/image-product-2-thumbnail.jpg"/></div>
+                    <div class="card"><img src="./images/image-product-3-thumbnail.jpg"/></div>
+                    <div class="card"><img src="./images/image-product-4-thumbnail.jpg"/></div>
+                </div>
+         </div>
+
+            <!-- Aqui fica o modal -->
+
+            <div id="fundomodal" class="fundomodal">
+
+                <div id="modal" class="modal">
+                    <div class="imagem">
+                        <img id="img_principalmodal" src="./images/image-product-1.jpg"/>
+                    </div>
+                    
+                    <div class="cards">
+                        <div class="card"><img src="./images/image-product-1-thumbnail.jpg"/></div>
+                        <div class="card"><img src="./images/image-product-2-thumbnail.jpg"/></div>
+                        <div class="card"><img src="./images/image-product-3-thumbnail.jpg"/></div>
+                        <div class="card"><img src="./images/image-product-4-thumbnail.jpg"/></div>
+                    </div>
+
+                    <div id="fecharmodal"><img  src="./images/icon-close.svg"/></div>
+                    <div id="previmgmodal"><img  src="./images/icon-previous.svg"/></div>
+                    <div id="nextimgmodal"><img  src="./images/icon-next.svg"/></div>
+                </div>
+
+            </div>
+            
+        </main>
+
+        <footer></footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
