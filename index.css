@@ -90,6 +90,10 @@ header nav .icones {
     align-items: center;
 }
 
+header nav .icones .icon1 img {
+
+}
+
 header nav .icones .icon1 .valorcar {
     width: 14px;
     height: 13px;
@@ -102,6 +106,7 @@ header nav .icones .icon1 .valorcar {
     text-align: center;
     color: #ffffff;
     display: none;
+   
 }
 
 header nav .icones .icon1, .icon2 {
@@ -234,8 +239,6 @@ main {
 .flex .info {
     margin-top: 40px;
     width: 50%;
-   
-    
     }
 
 .flex .info .p1 {
@@ -466,6 +469,34 @@ main {
     align-items: center;
     justify-content: center;
 }
+
+@media (min-width:1100px){
+    .conteiner {
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+
+    .flex {
+        max-width: 1000px;
+        margin: 0 auto;
+        
+    }
+
+    .flex .imagem {
+        width: 40%;
+    }
+
+    .flex .info {
+        width: 60%;
+    }
+
+    .fundomodal {
+        padding: 0 auto;
+    }
+
+   
+}
+
 
 
 @media (max-width:946px) {
@@ -703,7 +734,20 @@ main {
         
     }
 
-    header nav ul .fecharmenu {
-       
+    .modal .imagem #img_principalmodal{
+        width: 380px;
+        height: 400px;
+    }
+
+    .modal #previmgmodal{ 
+        width: 35px;
+        height: 35px;
+        margin-left: 35px;
+    }
+    
+    .modal #nextimgmodal{
+        width: 35px;
+        height: 35px;
+        margin-right: 35px;
     }
 }

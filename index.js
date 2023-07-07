@@ -126,12 +126,27 @@ carrinho.addEventListener("click", ()=>{
 
 
  previmgmodal.addEventListener("click", ()=>{
+    const array = ["./images/image-product-1.jpg","./images/image-product-2.jpg","./images/image-product-3.jpg","./images/image-product-4.jpg"]
 
-        
+        if(img_principalmodal.getAttribute("src") == array[3]){
+            img_principalmodal.setAttribute("src", array[2])
+        }else if(img_principalmodal.getAttribute("src") == array[2]){
+            img_principalmodal.setAttribute("src", array[1])
+        }else if(img_principalmodal.getAttribute("src") == array[1]){
+            img_principalmodal.setAttribute("src", array[0])
+        } 
+    })
+
+
+ nextimgmodal.addEventListener("click", ()=>{
+    const array = ["./images/image-product-1.jpg","./images/image-product-2.jpg","./images/image-product-3.jpg","./images/image-product-4.jpg"]
     
-       
-        const array = ["./images/image-product-1.jpg","./images/image-product-2.jpg","./images/image-product-3.jpg","./images/image-product-4.jpg"]
-        img_principalmodal.setAttribute("src", array[2])
-        
+            if(img_principalmodal.getAttribute("src") == array[0]){
+                img_principalmodal.setAttribute("src", array[1])
+            }else if(img_principalmodal.getAttribute("src") == array[1]){
+                img_principalmodal.setAttribute("src", array[2])
+            }else if(img_principalmodal.getAttribute("src") == array[2]){
+                img_principalmodal.setAttribute("src", array[3])
+            } 
     })
  
