@@ -735,7 +735,7 @@ main {
     }
 
     .modal .imagem #img_principalmodal{
-        width: 380px;
+        width: 370px;
         height: 400px;
     }
 
@@ -750,4 +750,29 @@ main {
         height: 35px;
         margin-right: 35px;
     }
+}
+
+
+@media (max-width:360px) {
+    .modal .imagem #img_principalmodal{
+        width: 330px;
+        height: 400px;
+    }
+
+    .modal #fecharmodal {
+        margin-right: 65px;
+    }
+
+    .modal #previmgmodal{ 
+        width: 35px;
+        height: 35px;
+        margin-left: 85px;
+    }
+    
+    .modal #nextimgmodal{
+        width: 35px;
+        height: 35px;
+        margin-right: 85px;
+    }
+   
 }
